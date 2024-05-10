@@ -2,7 +2,7 @@
    Stock Trading Screener
 </h1>
 
-This project is a python based stock screener that collects real-time data of the stocks listed on the National Stock Exchange (NSE) and does time-series analysis to generate trading signals by implementation of multiple conventional technical analysis strategies.
+A python based stock screener that collects real-time data of the stocks listed on the National Stock Exchange (NSE) and does time-series analysis to generate trading signals by implementation of multiple conventional technical analysis strategies.
 
 ## Features
 
