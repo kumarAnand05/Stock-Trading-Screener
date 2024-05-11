@@ -2,11 +2,11 @@
    Stock Trading Screener
 </h1>
 
-A python based stock screener that collects real-time data of the stocks listed on the National Stock Exchange (NSE) and does time-series analysis to generate trading signals by implementation of multiple conventional technical analysis strategies.
+A python based stock screener that collects real-time data of stocks listed on the [National Stock Exchange (NSE)](https://www.nseindia.com/) and performs time-series analysis to generate actionable trading signals by implementation of multiple conventional technical analysis strategies using indicators, candlestick chart and chart patterns.
 
 ## Features
 
-* **Real-time data collection** : Fetches the most recent data using yfinance API.
+* **Real-time data collection** : Fetches the most recent data using [yfinance API](https://github.com/ranaroussi/yfinance).
 * **Implementation of Technical Indicators** : Calculates technical indicators data and add it to the stock data to implement different trading strategies. 
 * **Downloading data** : Stores the data locally for faster processing.
 
@@ -16,6 +16,7 @@ A python based stock screener that collects real-time data of the stocks listed 
 * **Support and Resistance detection**
 
 #### Features under development
+* **Candlestick Pattern Detection**
 * **Chart Pattern detection**
 
 ## Installation
@@ -42,3 +43,10 @@ First connect to internet and open the terminal in the project directory. Now ma
 ###### Your machine is ready now!!! Keep machine connected to internet and run the main.py file
 
 
+## Available Indicators and Strategies
+
+### Available Indicators
+* [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp)
+* [50 Day EMA](https://www.investopedia.com/articles/active-trading/011415/strategies-applications-behind-50day-ema.asp)
+* [EMA200](https://www.investopedia.com/terms/e/ema.asp)
+* [RSI14](https://www.investopedia.com/terms/r/rsi.asp)
