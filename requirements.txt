@@ -3,3 +3,4 @@ pandas_ta>=0.3.14b0
 numpy>=1.26.4
 statistics>=1.0.3.5
 yfinance>=0.2.38
+scikit-learn>=1.4.2
