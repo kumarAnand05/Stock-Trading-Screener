@@ -75,6 +75,27 @@ def collect_scrip_data(stock):
 
         return stock_data
 
+def get_period_value(period):
+    """
+    Function to set period value to overcome yFinance API issues that occur while fetching data using period args
+    """
+    days = int(period)
+    period_map = {
+        range(0, 4): '5d',
+        range(4, 26): '1mo',
+        range(26, 81): '3mo',
+        range(81, 161): '6mo',
+        range(161, 351): '1y',
+        range(351, 701): '2y',
+        range(701, 1751): '5y',
+        range(1751, 2000): '10y',
+    }
+
+    for period_range, value in period_map.items():
+        if days in period_range:
+            return value
+    return 'max'
+
 
 def get_latest_data(stock, period):
     """ Returns the time series data of scrip for defined period of time using yfinance API """
@@ -84,7 +105,8 @@ def get_latest_data(stock, period):
     if period == "max":
         latest_data = scrip.history(period='max').T.iloc[:, ::-1].round(2)
     else:
-        latest_data = scrip.history(period=f'{period}d').T.iloc[:, ::-1].round(2)
+        period = get_period_value(period)
+        latest_data = scrip.history(period=f'{period}').T.iloc[:, ::-1].round(2)
 
     # removing non-required data rows
     if "Dividends" in latest_data.index:
