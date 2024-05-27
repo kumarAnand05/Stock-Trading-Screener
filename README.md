@@ -50,3 +50,9 @@ First connect to internet and open the terminal in the project directory. Now ma
 * [50 Day EMA](https://www.investopedia.com/articles/active-trading/011415/strategies-applications-behind-50day-ema.asp)
 * [EMA200](https://www.investopedia.com/terms/e/ema.asp)
 * [RSI14](https://www.investopedia.com/terms/r/rsi.asp)
+
+### Available Strategies
+* [Golden Crossover](https://www.investopedia.com/terms/g/goldencross.asp)
+* [Death Crossover](https://www.investopedia.com/terms/d/deathcross.asp)
+* [Price-EMA Crossover](https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp)
+* [Bollinger-Band Strategy](https://hmarkets.com/learn-to-trade/learning-hub/bollinger-bands)
